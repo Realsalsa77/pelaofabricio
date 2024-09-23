@@ -21,11 +21,22 @@ header {
     padding: 20px;
     text-align: center;
 }
+@keyframes textoAlternado {
+  0% {
+    content: 'Infinity Addons';
+  }
+  50% {
+    content: '';
+  }
+  100% {
+    content: 'Infinity Addons';
+  }
+}
 
 header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  animation: textoAlternado 4s infinite;
 }
+
 
 /* Estilos para el menú de navegación */
 
